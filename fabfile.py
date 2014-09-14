@@ -22,11 +22,11 @@ def _update():
 
     with settings(warn_only=True):
         if run("test -d %s" % env.code_dir).failed:
-            run("git clone git@bitbucket.org:guillaumepiot/cotidia.git %s" % env.code_dir)
+            run("git clone https://github.com/guillaumepiot/cmsbasedemo.git %s" % env.code_dir)
 
     with cd(env.code_dir):
         run("git pull")
-        run("cd ../ && chown -R cmsbase:cotidia cmsbasedemo")
+        run("cd ../ && chown -R cmsbasedemo:cotidia cmsbasedemo")
         run(env.collectstatic)
 
     # Restart wsgi server
