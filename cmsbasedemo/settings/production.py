@@ -8,6 +8,6 @@ ALLOWED_HOSTS = ['demo.cmsbase.cotidia.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'dev/cmsbasedemo_live.db',                      # Or path to database file if using sqlite3.
+        'NAME': os.path.join(PROJECT_DIR, '../../dev/cmsbasedemo_live.db'),                      # Or path to database file if using sqlite3.
     }
 }

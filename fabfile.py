@@ -26,7 +26,7 @@ def _update():
 
     with cd(env.code_dir):
         run("git pull")
-        run("cd ../ && chown -R cmsbasedemo:cotidia cmsbasedemo")
+        run("cd ../ && chown -R cmsdemo:cotidia cmsbasedemo")
         run(env.collectstatic)
 
     # Restart wsgi server
