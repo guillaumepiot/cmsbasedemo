@@ -6,7 +6,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Admin name', 'admin@example.com'),
+    ('Guillaume Piot', 'support@cotidia.com'),
 )
 
 MANAGERS = ADMINS
@@ -17,6 +17,10 @@ DATABASES = {
         'NAME': 'dev/cmsbasedemo.db',                      # Or path to database file if using sqlite3.
     }
 }
+
+EMAIL_HOST = os.getenv('EMAIL_HOST')
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
