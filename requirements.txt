@@ -4,7 +4,7 @@ South==1.0
 -e git+https://guillaumepiot@bitbucket.org/guillaumepiot/cotidia-admin-tools.git@4b966621ebc823640d72c5147936a7d44ebbe682#egg=cotidia_admin_tools-master
 -e git+https://guillaumepiot@bitbucket.org/guillaumepiot/cotidia-filemanager.git@7ac6dad4eac1660e94c3aa9ce0a1ba20b31b646c#egg=cotidia_filemanager-master
 -e git+https://guillaumepiot@bitbucket.org/guillaumepiot/cotidia-redactor.git@3887060949a3c2891785ec27b5ab08f20542e539#egg=cotidia_redactor-master
--e git+https://github.com/Cotidia/cotidia-cms-base.git@daf60fbbf11938cdd49433ba2185160dfc0bc3d5#egg=django_cms_base-master
+-e git+https://github.com/Cotidia/cotidia-cms-base.git@e0d18b7134f2951d76ffb2381a0e4ecc7c6babd4#egg=django_cms_base-master
 django-codemirror-widget==0.4.0
 django-form-utils==1.0.1
 django-localeurl==2.0.1
