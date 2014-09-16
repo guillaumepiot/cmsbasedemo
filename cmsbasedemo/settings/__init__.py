@@ -132,6 +132,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
 
+    'localeurl',
+
     'cmsbase',
     'reversion',
     'mptt',
@@ -177,10 +179,10 @@ ADMIN_TOOLS_MENU = 'cmsbasedemo.menu.CustomMenu'
 
 LANGUAGES = (
     ('en', 'English'),
-    # ('nl', 'Dutch'),
-    # ('es', 'Spanish'),
-    # ('pt', 'Portuguese'),
-    # ('de', 'German'),
+    ('nl', 'Dutch'),
+    ('es', 'Spanish'),
+    ('pt', 'Portuguese'),
+    ('de', 'German'),
 )
 DEFAULT_LANGUAGE = LANGUAGES[0][0]
 
@@ -190,3 +192,8 @@ LANGUAGE_CODE = DEFAULT_LANGUAGE
 # Define wether or not to display the url prefix
 # False if we have only one language supported
 PREFIX_DEFAULT_LOCALE = False if len(LANGUAGES) <= 1 else True
+
+LOCALE_INDEPENDENT_PATHS = (
+    r'^/admin/',
+    r'^/uploads/',
+)

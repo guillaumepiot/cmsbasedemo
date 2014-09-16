@@ -5,6 +5,8 @@ admin.autodiscover()
 
 # Non localised URLs
 urlpatterns = patterns('',
+    # Language switcher management
+    (r'^localeurl/', include('localeurl.urls')),
     # Password reset features
     url(r'^admin/password_reset/$', 'django.contrib.auth.views.password_reset', name='admin_password_reset'),
     url(r'^admin/password_reset/done/$', 'django.contrib.auth.views.password_reset_done', name='password_reset_done'),
